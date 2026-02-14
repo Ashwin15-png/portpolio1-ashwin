@@ -20,15 +20,19 @@ app.use(express.static("public"))
 // Helper: send emails
 async function sendEmail({ from, to, subject, text, html }) {
   const transporter = nodemailer.createTransport({
-    service: "gmail",
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true,
+    family: 4, // 👈 FORCE IPv4 (VERY IMPORTANT)
     auth: {
       user: process.env.EMAIL_USER,
-      pass: process.env.GMAIL_APP_PASSWORD, // Use App Password
+      pass: process.env.GMAIL_APP_PASSWORD,
     },
   });
 
   return transporter.sendMail({ from, to, subject, text, html });
 }
+
 
 // Contact endpoint
 app.post("/contact", async (req, res) => {
