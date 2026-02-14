@@ -326,18 +326,15 @@
         <h2 class="text-sm mono text-blue-500 mb-2">// CONNECT WITH ME</h2>
         <h3 class="text-4xl font-bold uppercase mb-12">Contact Me</h3>
 
-<form name="contact"
+<form id="contactForm"
       method="POST"
-      enctype="application/x-www-form-urlencoded"
-      action="/backend/autoReply.js"
+      action="/contact"
       class="space-y-6">
-
-    <input type="hidden" name="form-name" value="contact">
-    <input type="hidden" name="bot-field">
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <input type="text" name="name" placeholder="Your Name" required
                class="w-full px-6 py-4 bg-black/30 border border-white/10 rounded-xl text-white">
+
         <input type="email" name="email" placeholder="Your Email" required
                class="w-full px-6 py-4 bg-black/30 border border-white/10 rounded-xl text-white">
     </div>
@@ -350,6 +347,7 @@
         Send Message
     </button>
 </form>
+
 <script>
 document.getElementById("contactForm").addEventListener("submit", async (e) => {
   e.preventDefault(); // Prevent default page reload
