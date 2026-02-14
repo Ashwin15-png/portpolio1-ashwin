@@ -76,9 +76,9 @@ app.post("/contact", async (req, res) => {
     // Respond with redirect URL
     res.status(200).json({ redirect: "/success.html" });
   } catch (err) {
-    console.error("Email send error:", err);
-    res.status(500).json({ error: "Failed to send email" });
-  }
+  console.error("FULL ERROR:", err);
+  res.status(500).json({ error: err.message });
+}
 });
 
 // Start server
