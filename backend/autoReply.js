@@ -5,21 +5,17 @@ import cors from "cors";
 import path from "path";
 import { fileURLToPath } from "url";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-// Serve static files
-app.use(express.static("public"));
-
-
 dotenv.config();
 
-const app = express();
+const app = express();   // ✅ CREATE APP FIRST
 
 // Middleware
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// ✅ THEN static
+app.use(express.static("public"))
 
 // Helper: send emails
 async function sendEmail({ from, to, subject, text, html }) {
