@@ -350,6 +350,38 @@
         Send Message
     </button>
 </form>
+<script>
+document.getElementById("contactForm").addEventListener("submit", async (e) => {
+  e.preventDefault(); // Prevent default page reload
+
+  const form = e.target;
+  const data = {
+    name: form.name.value,
+    email: form.email.value,
+    message: form.message.value,
+  };
+
+  try {
+    const response = await fetch(form.action, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+
+    const result = await response.json();
+
+    if (response.ok && result.redirect) {
+      // Redirect to success page
+      window.location.href = result.redirect;
+    } else {
+      alert(result.error || "Something went wrong!");
+    }
+  } catch (err) {
+    console.error(err);
+    alert("Failed to submit form");
+  }
+});
+</script
 
 
 
