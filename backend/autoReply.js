@@ -1,40 +1,47 @@
 import express from "express";
 import nodemailer from "nodemailer";
 import dotenv from "dotenv";
+import cors from "cors";
 
 dotenv.config();
+
 const app = express();
+
+// Middleware
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Helper: send emails
+async function sendEmail({ from, to, subject, text, html }) {
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: process.env.EMAIL_USER,
+      pass: process.env.GMAIL_APP_PASSWORD, // Use App Password
+    },
+  });
+
+  return transporter.sendMail({ from, to, subject, text, html });
+}
+
+// Contact endpoint
 app.post("/contact", async (req, res) => {
   try {
-    const { name = "Visitor", email, message = "No message" } = req.body;
+    const { name = "Visitor", email, message = "No message provided" } = req.body;
 
-    if (!email) return res.status(400).send("Email missing");
+    if (!email) return res.status(400).json({ error: "Email is required" });
 
-    const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.GMAIL_APP_PASSWORD,
-      },
-    });
-
-    // Send email to you
-    await transporter.sendMail({
+    // 1️⃣ Send email to yourself
+    await sendEmail({
       from: `"Portfolio Bot" <${process.env.EMAIL_USER}>`,
       to: process.env.EMAIL_USER,
       subject: `New message from ${name}`,
-      text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
+      text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
     });
 
-    // Auto-reply to visitor
-    await transporter.sendMail({
-      from: `"S Ashwin Kumar" <${process.env.EMAIL_USER}>`,
-      to: email,
-      subject: "Thanks for contacting me!",
-      html: `
+    // 2️⃣ Auto-reply to visitor
+    const htmlTemplate = `
       <div style="font-family:Arial,sans-serif;background:#0f172a;padding:30px;color:#e2e8f0;">
         <div style="max-width:600px;margin:auto;background:#1e293b;padding:30px;border-radius:10px;">
           <h2 style="color:#38bdf8;">Hello ${name} 👋</h2>
@@ -52,13 +59,20 @@ app.post("/contact", async (req, res) => {
           <p>Best Regards,<br/><b>S Ashwin Kumar</b></p>
         </div>
       </div>
-      `,
+    `;
+
+    await sendEmail({
+      from: `"S Ashwin Kumar" <${process.env.EMAIL_USER}>`,
+      to: email,
+      subject: "Thanks for contacting me!",
+      html: htmlTemplate,
     });
 
+    // Respond with redirect URL
     res.status(200).json({ redirect: "/success.html" });
   } catch (err) {
-    console.error(err);
-    res.status(500).send("Failed to send email");
+    console.error("Email send error:", err);
+    res.status(500).json({ error: "Failed to send email" });
   }
 });
 
