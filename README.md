@@ -266,35 +266,41 @@ current_focus:
 
 ## 📊 GitHub Analytics & Streak
 
-<table width="100%">
+<table width="100%" style="border-collapse: collapse; border: 1px solid #30363d; background-color: #0d1117;">
   <tr>
-    <td width="50%" valign="top" align="center">
-      <h3>📊 My GitHub Statistics</h3>
-      <br />
-      <a href="https://github.com/Ashwin15-png">
-        <img src="https://github-readme-stats.vercel.app/api?username=Ashwin15-png&show_icons=true&theme=tokyonight&title_color=a78bfa&icon_color=38bdf8&text_color=cbd5e1&bg_color=0d1117&border_color=30363d&hide_border=false" width="100%" alt="S. Ashwin Kumar GitHub Statistics" />
-      </a>
-      <br /><br />
-      <svg width="110" height="110" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="55" cy="55" r="46" fill="#0d1117" stroke="#30363d" stroke-width="6"/>
-        <circle cx="55" cy="55" r="46" fill="none" stroke="#a78bfa" stroke-width="6" stroke-dasharray="289" stroke-dashoffset="35" stroke-linecap="round"/>
-        <text x="55" y="63" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="bold" fill="#a78bfa" text-anchor="middle">A+</text>
-      </svg>
-      <p><b>Profile Activity Rating: A+</b></p>
+    <td width="50%" valign="top" style="border: 1px solid #30363d; padding: 16px;">
+      <h3 align="left" style="color: #a78bfa; margin-top: 0;">📊 My GitHub Statistics</h3>
+      <table width="100%" border="0">
+        <tr>
+          <td valign="top" width="60%">
+            <a href="https://github.com/Ashwin15-png">
+              <img src="https://github-readme-stats.vercel.app/api?username=Ashwin15-png&show_icons=true&theme=tokyonight&title_color=a78bfa&icon_color=38bdf8&text_color=cbd5e1&bg_color=0d1117&border_color=30363d&hide_border=true" width="100%" alt="S. Ashwin Kumar GitHub Statistics" />
+            </a>
+          </td>
+          <td valign="middle" align="center" width="40%">
+            <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="42" fill="#0d1117" stroke="#30363d" stroke-width="6"/>
+              <circle cx="50" cy="50" r="42" fill="none" stroke="#a78bfa" stroke-width="6" stroke-dasharray="264" stroke-dashoffset="30" stroke-linecap="round"/>
+              <text x="50" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="26" font-weight="bold" fill="#a78bfa" text-anchor="middle">A+</text>
+            </svg>
+            <br />
+            <span style="color: #38bdf8; font-weight: bold; font-size: 13px;">Rating: A+</span>
+          </td>
+        </tr>
+      </table>
     </td>
-    <td width="50%" valign="top" align="center">
-      <h3>🔥 Contribution / Streak</h3>
-      <br />
+    <td width="50%" valign="top" style="border: 1px solid #30363d; padding: 16px;">
+      <h3 align="left" style="color: #a78bfa; margin-top: 0;">🔥 Contribution / Streak</h3>
       <a href="https://github.com/Ashwin15-png">
         <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ashwin15-png&theme=tokyonight&background=0d1117&border=30363d&stroke=30363d&ring=A78BFA&fire=38BDF8&currStreakLabel=A78BFA" width="100%" alt="S. Ashwin Kumar Contribution Streak" />
       </a>
     </td>
   </tr>
   <tr>
-    <td colspan="2" align="center">
-      <h3>💻 My Programming Languages</h3>
+    <td colspan="2" align="center" style="border: 1px solid #30363d; padding: 16px;">
+      <h3 style="color: #a78bfa; margin-top: 0;">💻 My Programming Languages</h3>
       <a href="https://github.com/Ashwin15-png">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ashwin15-png&layout=compact&theme=tokyonight&title_color=a78bfa&text_color=cbd5e1&bg_color=0d1117&border_color=30363d&hide_border=false" width="98%" alt="S. Ashwin Kumar Programming Languages" />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ashwin15-png&layout=compact&theme=tokyonight&title_color=a78bfa&text_color=cbd5e1&bg_color=0d1117&border_color=30363d&hide_border=true" width="98%" alt="S. Ashwin Kumar Programming Languages" />
       </a>
     </td>
   </tr>
