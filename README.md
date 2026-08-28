@@ -145,16 +145,16 @@ current_focus:
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
-      <h3>🧠 VibeGuard AI</h3>
+      <h3>🤖 Machine Condition Monitoring — VibeGuardAI</h3>
       <p>Predictive maintenance and industrial IoT monitoring platform with real-time telemetry streaming, EMA filtering, and anomaly detection.</p>
       <p><b>Technology:</b> <code>React</code> · <code>Node.js</code> · <code>Express</code> · <code>Socket.IO</code> · <code>MongoDB</code></p>
-      <a href="https://github.com/Ashwin15-png/vibeguard-ai"><b>View Repository →</b></a>
+      <a href="https://github.com/Ashwin15-png/Machine-Condition-Monitoring-VibeGuardAI"><b>View Repository →</b></a>
     </td>
     <td width="50%" valign="top">
-      <h3>🏥 PrescriptionX</h3>
+      <h3>🧾 Prescription Extractor OCR</h3>
       <p>Healthcare prescription OCR and clinical document extraction platform powering automated text parsing and relational indexing.</p>
       <p><b>Technology:</b> <code>FastAPI</code> · <code>PostgreSQL</code> · <code>OpenCV</code> · <code>Tesseract</code> · <code>Python</code></p>
-      <a href="https://github.com/Ashwin15-png/prescriptionx"><b>View Repository →</b></a>
+      <a href="https://github.com/Ashwin15-png/prescription-extractor-ocr"><b>View Repository →</b></a>
     </td>
   </tr>
   <tr>
@@ -251,28 +251,61 @@ current_focus:
 
 <br />
 
+<div align="center">
+  <a href="https://www.credly.com/users/s-ashwin-kumar.f2377623/badges/credly">
+    <img src="https://img.shields.io/badge/View_My_Credly_Certifications-FF6B00?style=for-the-badge&logo=credly&logoColor=white" alt="View My Credly Certifications" />
+  </a>
+</div>
+
+<br />
+
 <!-- GRADIENT SEPARATOR -->
 <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&custom_color_list=0,7c3aed,3b82f6,06b6d4&height=3&section=header" width="100%" alt="Section Divider" />
 
 <br />
 
-## 📊 GitHub Statistics & Analytics
+## 📊 GitHub Analytics & Streak
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Ashwin15-png&show_icons=true&theme=tokyonight&title_color=a78bfa&icon_color=38bdf8&text_color=cbd5e1&bg_color=0f172a&border_color=334155&hide_border=false" height="180" alt="Ashwin Kumar GitHub Statistics" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ashwin15-png&layout=compact&theme=tokyonight&title_color=a78bfa&text_color=cbd5e1&bg_color=0f172a&border_color=334155&hide_border=false" height="180" alt="Ashwin Kumar Top Languages" />
-</p>
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top" align="center">
+      <h3>📊 My GitHub Statistics</h3>
+      <br />
+      <a href="https://github.com/Ashwin15-png">
+        <img src="https://github-readme-stats.vercel.app/api?username=Ashwin15-png&show_icons=true&theme=tokyonight&title_color=a78bfa&icon_color=38bdf8&text_color=cbd5e1&bg_color=0d1117&border_color=30363d&hide_border=false" width="100%" alt="S. Ashwin Kumar GitHub Statistics" />
+      </a>
+      <br /><br />
+      <svg width="110" height="110" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="55" cy="55" r="46" fill="#0d1117" stroke="#30363d" stroke-width="6"/>
+        <circle cx="55" cy="55" r="46" fill="none" stroke="#a78bfa" stroke-width="6" stroke-dasharray="289" stroke-dashoffset="35" stroke-linecap="round"/>
+        <text x="55" y="63" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="bold" fill="#a78bfa" text-anchor="middle">A+</text>
+      </svg>
+      <p><b>Profile Activity Rating: A+</b></p>
+    </td>
+    <td width="50%" valign="top" align="center">
+      <h3>🔥 Contribution / Streak</h3>
+      <br />
+      <a href="https://github.com/Ashwin15-png">
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ashwin15-png&theme=tokyonight&background=0d1117&border=30363d&stroke=30363d&ring=A78BFA&fire=38BDF8&currStreakLabel=A78BFA" width="100%" alt="S. Ashwin Kumar Contribution Streak" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <h3>💻 My Programming Languages</h3>
+      <a href="https://github.com/Ashwin15-png">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ashwin15-png&layout=compact&theme=tokyonight&title_color=a78bfa&text_color=cbd5e1&bg_color=0d1117&border_color=30363d&hide_border=false" width="98%" alt="S. Ashwin Kumar Programming Languages" />
+      </a>
+    </td>
+  </tr>
+</table>
 
-### 🔥 Contribution Streak
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ashwin15-png&theme=tokyonight&background=0f172a&border=334155&stroke=334155&ring=A78BFA&fire=38BDF8&currStreakLabel=A78BFA" width="100%" alt="Ashwin Kumar Contribution Streak" />
-</p>
+<br />
 
 ### 📈 Contribution Activity
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ashwin15-png&theme=github-compact&bg_color=0f172a&color=a78bfa&line=38bdf8&point=c084fc&area=true&hide_border=true" width="100%" alt="Ashwin Kumar Contribution Activity" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ashwin15-png&theme=github-compact&bg_color=0d1117&color=a78bfa&line=38bdf8&point=c084fc&area=true&hide_border=true" width="100%" alt="S. Ashwin Kumar Contribution Activity Graph" />
 </p>
 
 <br />
@@ -294,6 +327,9 @@ current_focus:
   </a>
   <a href="https://www.linkedin.com/in/ashwin-kumar-s-5053bb272/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Ashwin Kumar LinkedIn Profile" />
+  </a>
+  <a href="https://www.credly.com/users/s-ashwin-kumar.f2377623/badges/credly">
+    <img src="https://img.shields.io/badge/Credly-FF6B00?style=for-the-badge&logo=credly&logoColor=white" alt="Ashwin Kumar Credly Badges" />
   </a>
 
 </div>
